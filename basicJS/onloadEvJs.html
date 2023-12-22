@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<!-- 페이지 로드 시에 발생하는 속성이 있는 요소 -->
+<body onload="loadFunction()">
+
+    <!-- 결과를 표시할 곳 -->
+    <p id="result"></p>
+    
+    <script>
+    // 페이지 로드 시에 실행되는 함수
+    function loadFunction() {
+        // 결과를 표시할 요소
+        var resultElement = document.getElementById("result");
+    
+        // 결과를 표시
+        resultElement.innerHTML = "페이지가 완전히 로드되었습니다.";
+    }
+    </script>
+    
+    </body>
+</html>

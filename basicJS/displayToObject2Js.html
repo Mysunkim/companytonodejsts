@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<h2>What Can JavaScript Do?</h2>
+
+<p id="demo"></p>
+<p id="demo2"></p>
+<script>
+	const person = {
+    	name:"KMS",
+        age:33,
+        city:"名古屋"
+    };
+    
+    document.getElementById("demo").innerHTML = person.name+","+person.age+","+person.city;
+
+const person2 = {
+	name:"みき",
+    age:31,
+    city:"静岡"
+};
+
+let txt="";
+for(let x in person2){
+ txt+=person2[x] + ",";
+};
+
+document.getElementById("demo2").innerHTML = txt;   
+</script>
+</body>
+</html>

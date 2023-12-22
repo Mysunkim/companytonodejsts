@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id = "demo"></p>
+<h2>What Can JavaScript Do?</h2>
+<script>
+const a = "a";
+const b = "b";
+const c = "c";
+
+const letters = new Set();
+
+letters.add(a);
+letters.add(b);
+letters.add(c);
+
+let txt = "";
+for(let letter of letters){
+	txt += letter;
+}
+
+document.getElementById("demo").innerHTML = txt;
+</script>
+</body>
+</html>

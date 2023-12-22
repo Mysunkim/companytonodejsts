@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id = "demo"></p>
+<p id = "demo1"></p>
+<h2>What Can JavaScript Do?</h2>
+<script>
+const person = {
+	fullname:function(){
+    	return this.first + this.last;
+    }
+};
+
+const person1 = {
+	first : "kim",
+    last : "MS"
+};
+
+const person2 = {
+	first : "Lee",
+    last : "PM"
+};
+
+let ps1name = person.fullname.call(person1);
+let ps2name = person.fullname.call(person2);
+document.getElementById("demo").innerHTML = ps1name;
+document.getElementById("demo1").innerHTML =ps2name;
+</script>
+</body>
+</html>

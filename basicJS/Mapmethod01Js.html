@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id = "demo"></p>
+<h2>What Can JavaScript Do?</h2>
+<script>
+//create a map
+const fruits = new Map([
+	["apple",500],
+    ["banna",300],
+    ["orange",100]
+]);
+
+let rs = fruits.get("apple");
+
+document.getElementById("demo").innerHTML = rs;
+</script>
+</body>
+</html>

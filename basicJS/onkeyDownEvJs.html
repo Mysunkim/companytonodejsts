@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo">JavaScript can change HTML content.</p>
+
+<!-- キーが押されたときに発生する要素 -->
+<input type="text" onkeydown="keydownFunction()">
+
+<!-- 結果を表示するための要素 -->
+<p id="result"></p>
+
+<script>
+// キーが押されたときに実行される関数
+function keydownFunction() {
+    // キーコードを取得
+    var keyCode = event.keyCode;
+
+    // 結果を表示する要素
+    var resultElement = document.getElementById("result");
+
+    // 結果を表示
+    resultElement.innerHTML = "キーが押されました。キーコード: " + keyCode;
+}
+</script>
+</body>
+</html>

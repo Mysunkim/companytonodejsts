@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id = "demo"></p>
+<p id = "demo1"></p>
+<h2>What Can JavaScript Do?</h2>
+<script>
+class Car{
+	constructor(name){
+    	this.name = name;
+    }
+    static hello(){
+    	return "MyCar!!";
+    }
+}
+
+const myCar = new Car("Ford");
+
+document.getElementById("demo").innerHTML = Car.hello();
+</script>
+
+</body>
+</html>

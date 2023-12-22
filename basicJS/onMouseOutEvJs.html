@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 마우스 아웃 이벤트가 발생할 요소 -->
+    <div id="myElement" onmouseout="mouseOutFunction()">마우스를 가져다 대보세요.</div>
+
+    <!-- 결과를 표시할 곳 -->
+    <p id="result"></p>
+
+<script>
+// 마우스 아웃 이벤트가 발생할 때 실행될 함수
+function mouseOutFunction() {
+    // 결과를 표시할 요소에 값 설정
+    document.getElementById("result").innerHTML = "마우스가 요소를 벗어났습니다!";
+}
+</script>
+</body>
+</html>

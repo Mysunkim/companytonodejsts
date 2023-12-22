@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 텍스트 입력 필드 -->
+    <input type="text" id="myInput" onchange="myFunction()">
+
+    <!-- 결과를 표시할 곳 -->
+    <p id="result"></p>
+
+<script>
+// onchange 이벤트가 발생할 때 실행될 함수
+function myFunction() {
+    // 입력 필드의 값 가져오기
+    var inputValue = document.getElementById("myInput").value;
+
+    // 결과를 표시할 요소에 값 설정
+    document.getElementById("result").innerHTML = "入力値: " + inputValue;
+}
+</script>
+</body>
+</html>

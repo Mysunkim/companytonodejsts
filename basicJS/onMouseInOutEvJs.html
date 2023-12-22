@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- マウスオーバーとマウスアウトイベントが発生する要素 -->
+<div id="myElement" onmouseover="mouseOverAndOutFunction()" onmouseout="mouseOverAndOutFunction()">マウスで操作してみてください。</div>
+
+<!-- 結果を表示するための要素 -->
+<p id="result"></p>
+
+<script>
+// マウスオーバーとマウスアウトイベントが発生したときに実行される関数
+function mouseOverAndOutFunction() {
+    // 結果を表示する要素
+    var resultElement = document.getElementById("result");
+
+    // マウスオーバーとマウスアウトのどちらのイベントかを判定
+    if (event.type === 'mouseover') {
+        resultElement.innerHTML = "マウスが要素上に移動しました。";
+    } else if (event.type === 'mouseout') {
+        resultElement.innerHTML = "マウスが要素を離れました。";
+    }
+}
+</script>
+</body>
+</html>
